@@ -1,0 +1,6 @@
+streamlit
+PIL
+numpy
+pandas
+joblib
+pywt
