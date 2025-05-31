@@ -4,3 +4,4 @@ numpy
 pandas
 joblib
 PyWavelets
+opencv-python
