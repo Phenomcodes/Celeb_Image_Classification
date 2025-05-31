@@ -1,6 +1,6 @@
 streamlit
-PIL
+Pillow
 numpy
 pandas
 joblib
-pywt
+PyWavelets
