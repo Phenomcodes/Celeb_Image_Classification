@@ -42,25 +42,25 @@ img4 = img4.resize(size)
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-    st.image(img1, use_column_width=False)
+    st.image(img1, use_container_width=False)
     st.markdown(
         "<p style='text-align: center; color: red; font-size: 16px;'>Cristiano Ronaldo</p>",
         unsafe_allow_html=True
     )
 with col2:
-    st.image(img2,use_column_width=False)
+    st.image(img2,use_container_width=False)
     st.markdown(
         "<p style='text-align: center; color: red; font-size: 16px;'>Lebron James</p>",
         unsafe_allow_html=True
     )
 with col3:
-    st.image(img3, use_column_width=False)
+    st.image(img3, use_container_width=False)
     st.markdown(
         "<p style='text-align: center; color: red; font-size: 16px;'>Lewis Hamilton</p>",
         unsafe_allow_html=True
     )
 with col4:
-    st.image(img4, use_column_width=False)
+    st.image(img4, use_container_width=False)
     st.markdown(
         "<p style='text-align: center; color: red; font-size: 16px;'>Simone Biles</p>",
         unsafe_allow_html=True
@@ -78,7 +78,7 @@ model = joblib.load("./artifacts/saved_model.pkl")
 if uploaded_file is not None:
     # Open and display the image
     image = Image.open(uploaded_file)
-    st.image(image, caption="Uploaded Image", use_column_width=True)
+    st.image(image, caption="Uploaded Image", use_container_width=True)
     #get face from uploaded image
     face = get_faces(image)
     try:
