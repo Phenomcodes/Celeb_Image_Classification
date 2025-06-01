@@ -67,7 +67,7 @@ with col4:
     )
 
 # Create the upload box
-uploaded_file = st.file_uploader("Upload an image for classification", type=["jpg", "jpeg", "png", "gif", "bmp"])
+uploaded_file = st.file_uploader("Upload an image for classification", type=["jpg", "jpeg", "png", "gif", "bmp", "webp"])
 
 #write saved model back
 model = joblib.load("./artifacts/saved_model.pkl")
